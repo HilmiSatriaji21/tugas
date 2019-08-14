@@ -1,22 +1,23 @@
 <?php
-$loop =  11;
+$loop =  20;
+$num = 1;
 for ($i = 0; $i < $loop; $i++) { 
-    if ($i < 1) {
-        echo "Aku Data Ke- " . $i ." Dan Mendapatkan Mendali Emas<br>";
+    if ($i = 1) {
+        echo "Aku Data Ke- " . $num++ ." Dan Mendapatkan Mendali Emas<br>";
     }
     elseif ($i < 2) {
-        echo "Aku Data Ke- " . $i ." Dan Mendapatkan Mendali Perak<br>";
+        echo "Aku Data Ke- " . $num++ ." Dan Mendapatkan Mendali Perak<br>";
     }
     elseif ($i < 3) {
-        echo "Aku Data Ke- " . $i ." Dan Mendapatkan Mendali Perunggu<br>";
+        echo "Aku Data Ke- " . $num++ ." Dan Mendapatkan Mendali Perunggu<br>";
     }
     elseif ($i < 7) {
-        echo "Aku Data Ke- " . $i ." Dan Mendapatkan Tas Laptop<br>";  
+        echo "Aku Data Ke- " . $num++ ." Dan Mendapatkan Tas Laptop<br>";  
     }
     elseif ($i < 10) {
-        echo "Aku Data Ke- " . $i ." Dan Mendapatkan Tas Karung<br>";  
+        echo "Aku Data Ke- " . $num++ ." Dan Mendapatkan Tas Karung<br>";  
     }
-    elseif ($i < 11) {
-        echo "Aku Data Ke- " . $i ." Dan Tidak Mendapatkan Apapun<br>";  
+    elseif ($i > 10) {
+        echo "Aku Data Ke- " . $num++ ." Dan Tidak Mendapatkan Apapun<br>";  
     }
 }
