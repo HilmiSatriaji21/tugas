@@ -1,7 +1,7 @@
 <html>
 <head><title>Band Favorit ~ Inputan Checkbox</title></head>
 <body>
-<FORM ACTION="proses07.php" METHOD="POST" NAME="input">
+<FORM ACTION="proses7.php" METHOD="POST" NAME="input">
 <h2>Pilih Band Favorit Anda :</h2>
 <input type="checkbox" name="band01" value="Padi"
 checked> Padi<br>
