@@ -1,7 +1,7 @@
 <html>
      <head><title>Tugas Form</title></head>
      <body>
-     <center><h1>~ ようこそ ~</h1></center>
+     <center><h1>~ こんにちは ~</h1></center>
      <fieldset>
      <legend>形 アレイ</legend>
      <br>
