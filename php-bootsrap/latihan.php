@@ -49,49 +49,53 @@
     <!-- End Header -->
 
     <!-- Content -->
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container-fluid">
+        <div class="row">
             <div class="col-md-6" style="padding:20px;">
-            <div class="card">
-                <h1 class="card-header">Raport</h1>
-                <p class="card-body">
-                 <form action="" method="POST">
-                  <div class="form-group">
-                       <label for="">Nama</label>
-                       <input type="text" name="nama"
-                       class="form-control" required>
-                       </div>
-                  <div class="form-group">
-                       <label for="">Kelas</label>
-                       <input type="text" name="kelas"
-                       class="form-control" required>
-                       </div>
-                       <div class="form-group">
-                           <button class="btn btn-primary btn-block" name="Simpan" type="submit">
-                            Simpan
-                            </button>
+                <div class="card">
+                    <div class="card-header">Latihan</div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                             <div class="form-group">
+                                 <label for="">Nama</label>
+                                 <input type="text" name="nama"class="form-control">
                 </div>
+                <div class="form-group">
+                    <label>Kelas</label>
+                    <input type="text" name="kelas" class="form-control">
             </div>
+                <div class="form-group">
+                    <button type="submit" name="simpan" class="btn btn-danger">Simpan
+                    </button>
+                </div>
+            </form>
         </div>
-        <div class="col-md-6">
-        <center><h2><u>Output</u></h2></center>
-        <div class="table-responsive">
-            <table class="table">
-            <tr>
-                <th>Nama</th>
-                <th>Kelas</th>
-            </tr>
-            <?php
-        if (isset($_POST['Simpan'])) {
-            $a = $_POST['nama'];
-            $b = $_POST['kelas'];
-        ?>    
-            <tr>
-                <td><?php echo $a; ?></td>
-                <td><?php echo $b; ?></td>
-            </tr>
-        <?php } ?>
-          </table>          
+    </div>
+</div>                    
+            <div class="col-md-6" style="padding:20px;">
+                <div class="table-responsive">
+                    <table class="table">
+                         <tr>
+                            <th>Nama</th>
+                            <th>Kelas</th>
+                        </tr>
+                        <!-- PHP -->
+                        <?php
+                        if (isset($_POST['simpan'])) {
+                            $a = $_POST['nama'];
+                            $b = $_POST['kelas'];
+                        ?>
+                        <!-- END PHP-->
+                        <tr>
+                           <td><?php echo $a; ?></td>
+                           <td><?php echo $b; ?></td>
+                        </tr>
+                        <?php } ?>   
+                              </table>      
+                         </div>
+                    </div>
+              </form>
+         </div>
     </div>        
     <!-- End Content -->
 
